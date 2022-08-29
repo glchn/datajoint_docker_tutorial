@@ -9,7 +9,7 @@ print(experimenter)
 
 fibphot = FPSession()
 print(fibphot)
-fibphot.insert1((2942, 0000,'fiber photometry', '2022-06-09 12:53:07'))
+fibphot.insert1((2942, 0000,'fiber photometry', '2022-06-09 12:53:07')) # 2942 is made up.
 print(fibphot)
 
 fpdata = FPData()
@@ -23,3 +23,24 @@ fpdata.insert1((2942,
                 '/FibPhoTest-220218-125509_test-220523-190029.tsq',
                 '/StoresListing.txt'))
 print(fpdata)
+
+mydata = fpdata.fetch('tbk')
+print(mydata)
+
+mydata = fpdata.fetch('tdx')
+print(mydata)
+
+mydata = fpdata.fetch('tev')
+print(mydata)
+
+mydata = fpdata.fetch('tin')
+print(mydata)
+
+mydata = fpdata.fetch('tnt')
+print(mydata)
+
+mydata = fpdata.fetch('tsq')
+print(mydata)
+
+mydata = fpdata.fetch('storeslisting')
+print(mydata)
